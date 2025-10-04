@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Laugh, Frown, RotateCcw, Sparkles, Trophy, Flame, Settings, Zap, Target, Skull } from 'lucide-react'
+import AdSense from './AdSense'
 
 // Roast categories with different intensity levels
 const roastCategories = {
@@ -353,6 +354,11 @@ function App() {
                 </div>
               </div>
             </div>
+
+            {/* Ad in Sidebar */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4">
+              <AdSense />
+            </div>
           </div>
 
           {/* Middle Column - Main Game */}
@@ -500,6 +506,11 @@ function App() {
               </div>
             )}
           </div>
+        </div>
+
+        {/* Ad Section */}
+        <div className="mt-6">
+          <AdSense />
         </div>
 
         {/* Footer */}
